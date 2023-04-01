@@ -3,7 +3,7 @@ const bar = document.getElementById("navigation_bar");
 const nav_toggles = document.querySelectorAll(".navigation_toggle");
 
 function toggleBar() {
-    if(bar.style.display === "none") {
+    if(window.getComputedStyle(bar).display === "none") {
         bar.style.display = "flex";
         document.getElementById("header_toggle").style.display = "none";
     }
