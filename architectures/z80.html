@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HWPlanet</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../index.css"/>
+    </head>
+    <body>
+        <aside id="navigation_bar">
+            <figure>
+                <a href="../index.html"><img id="logo" src="../images/logo.png"/></a>
+            </figure>
+            <dl>
+                <dt class="content_menu">Plataformas</dt>
+                    <dd><a href="../platforms/commodore64.html">Commodore 64</a></dd>
+                    <dd><a href="../platforms/msx.html">MSX</a></dd>
+                    <dd><a href="../platforms/nes.html">NES</a></dd>
+                    <dd><a href="../platforms/nintendo64.html">Nintendo 64</a></dd>
+                    <dd><a href="../platforms/ps1.html">PlayStation 1</a></dd>
+                    <dd><a href="../platforms/zxspectrum.html">ZX Spectrum</a></dd>
+                <dt class="content_menu">Arquitecturas</dt>
+                    <dd><a href="6502.html">6502</a></dd>
+                    <dd id="active_item">Z80</dd>
+                    <dd><a href="mips.html">MIPS</a></dd>
+                <dt class="content_menu">Software</dt>
+                    <dd><a href="../software/arcadeemus.html">Arcades</a></dd>
+                    <dd><a href="../software/multisystem.html">Multisistema</a></dd>
+                <dt><a href="../login.html">Login</a></dt>
+                <dt><a href="../contribute.html">Contribuir</a></dt>
+                <dt><a href="../about.html">Acerca de</a></dt>
+            </dl>
+            <input type="image" id="bar_toggle" class="navigation_toggle" src="../images/hamburger_white.svg"/>
+        </aside>
+        <div id="content">
+            <main>
+                <table class="platform_data" platform="Zilog Z80"></table>
+                <h1><img id="header_toggle" class="navigation_toggle" src="../images/hamburger.svg"/>Z80</h1>
+                <p>
+                    El Z80 es un microprocesador de 8 bits introducido en el mercado por Zilog, como primer producto de la startup. Fue concebido por Federico Faggin
+                    a finales de 1974 y desarrollado por él y sus empleados a comienzos del año siguiente. Las primeras unidades funcionales llegaron en marzo de
+                    1976, aunque hasta mediados de año que el procesador no saldría oficialmente a la venta. Gracias a las ventas obtenidas, la empresa pudo construir
+                    sus propias fábricas de chips y expandir el número de empleados a lo largo de los próximos años.
+                </p>
+                <p>
+                    A nivel de software, se trata de una extensión del Intel 8080 compatible con este y, del mismo modo, estaba destinado a sistemas empotrados.
+                    Aunque se usó en ese ámbito, el Z80 también se convirtió en una de las CPUs más empleadas en sistemas de escritorio de los 70 y 80, así como en
+                    hardware militar, equipamiento musical, como sintetizadores, y algunas máquinas arcade, incluyendo el notorio Pac-Man.
+                </p>
+                <p>
+                    Zilog licenció el Z80 a las empresas estadounidenses Synertek y Mostek, que habían ayudado con la producción inicial, así como al manufacturador europeo
+                    SGS, aunque, de manera no oficial, el diseño fue copiado por compañías japonesas y del este de Europa. Otro factor determinante para su éxito fue el apoyo
+                    que posteriormente recibiría por parte de NEC, Toshiba, Sharp o Hitachi, quienes comenzaron a manufacturar el procesador o clones compatibles con el mismo.
+                </p>
+                <p>
+                    Ya en décadas recientes, Zilog se ha centrado de nuevo en el creciente mercado de sistemas empotrados, hecho que se ha reflejado en las últimas versiones de
+                    sus microcontroladores compatibles con esta arquitectura.
+                </p>
+
+                <h2>Instrucciones</h2>
+                <p>
+                    A diferencia de la arquitectura 6502, Z80 cuenta con múltiples registros de propósito general que se pueden combinar entre sí para llevar a cabo
+                    operaciones de 16 bits, lo que permite una mayor flexibilidad al juego de instrucciones. Algunos registros, de hecho, cuentan con 16 bits de manera
+                    independiente, como es el caso de los registros índice y el <i>stack pointer</i>.
+                </p>
+                <p>
+                    
+                </p>
+                <ui>
+                    <li>
+                        Aritmético-lógicas (ADC, ADD, AND, CPL, DEC, INC, RLD, RR, SBC, SLR, SRA, SUB, XOR...): Permiten modificar el contenido de los registros o la memoria empleando la ALU.
+                        Todas ellas cambian el estado del procesador de modo que no sea necesario realizar comparaciones a posteriori con los valores obtenidos, como suele ocurrir
+                        con la mayoría de arquitecturas. 
+                    </li>
+                    <li>
+                        Saltos (JP, JR): Permiten modificar el flujo de ejecución del programa incondicional o condicionalmente en función de la variante de cada instrucción empleada.
+                        JP permite saltar a direcciones absolutas, mientras que JR solo en relación a la posición de la instrucción actual.
+                    </li>
+                    <li>
+                        Manipulación de la pila (PUSH, POP): Permiten añadir y eliminar valores de la pila, almacenada en RAM.
+                    </li>
+                    <li>
+                        Carga y almacenamiento en memoria (LD, LDD, LDDR, LDI, LDIR): Permiten leer y almacenar datos en posiciones arbitrarias de la memoria direccionable por la CPU.
+                        A diferencia de muchas arquitecturas, no hay instrucciones denominadas explícitamente "store", sino que se usa "load" para almacenar en memoria también.
+                    </li>
+                    <li>
+                        Modificación de estado (RES, SET, SCF): Permiten modificar el registro de estado del procesador o incluso manipular a nivel de bits otros registros.
+                    </li>
+                    <li>
+                        Intercambio (EX): Permite transferir el contenido de un registro a otro y viceversa.
+                    </li>
+                    <li>
+                        Entrada y salida (IN, OUT, OUTD, OUTI): Permite mover datos a través de los puertos de entrada y salida. Estas instrucciones son necesarias ya que
+                        la E/S en la arquitectura Z80 no funciona por mapeo de memoria, de modo que no hay direcciones asignadas a cada dispositivo.
+                    </li>
+                    <li>
+                        Gestión de interrupciones (DI, EI, IM, RETI, RETN): Permiten manejar las interrupciones activándolas, desactivándolas, generándolas o regresando del
+                        manejador de estas.
+                    </li>
+                </ui>
+                <h2>Referencia adicional</h2>
+                <p>
+                    Como suele ocurrir con arquitecturas lanzadas hace décadas, existen numerosas webs de referencia para los interesados en el funcionamiento de sus instrucciones,
+                    modos de direccionamiento u otras particularidades del hardware, o quienes busquen desarrollar un emulador para alguno de los sistemas que
+                    empleen la arquitectura, incluso en casos en que no sea el procesador principal, como en la Sega Mega Drive, que lo utiliza de chip de audio.
+                </p>
+                <p>
+                    Algunas páginas de relevancia son
+                    <a href="http://www.z80.info/">Z80.info</a> y
+                    <a href="http://z80-heaven.wikidot.com/">Z80-Heaven</a>
+                </p>
+            </main>
+            <footer>
+                <i>Hardware Planet 2023. <span id="disclaimer">La finalidad de esta página es exclusivamente informativa.</span></i>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+        <script src="../scripts/fetch_architecture_data.js"></script>
+        <script src="../scripts/content_menus.js"></script>
+        <script src="../scripts/navigation_bar.js"></script>
+        <script src="../scripts/night_mode.js"></script>
+        <script src="../scripts/preview_popups.js"></script>
+    </body>
+</html>

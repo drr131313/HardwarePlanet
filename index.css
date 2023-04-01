@@ -1,0 +1,100 @@
+
+@import "style/animations.css";
+@import "style/content.css";
+@import "style/contribute.css";
+@import "style/sidebar.css";
+
+@import "style/responsivity.css";
+
+body {
+    background: #FAFAFA;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    color: #3aa4f0;
+}
+
+a:hover {
+    color: #2deb92;
+}
+
+.night_mode {
+    background: #222222;
+    color: #FAFAFA;
+    border-color: #FAFAFA;
+}
+
+.forgot_login {
+    display: table-row;
+}
+
+.login_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login_form {
+    border-radius: 25px;
+    height: 30vh;
+    width: 30vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: #d1f8db;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    align-items: center;
+    animation: slideDown 1.2s;
+}
+
+.login_form button {
+    width: 0.5fr;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome h2 {
+    font-size: 28px;
+}
+
+.welcome h3 {
+    font-size: 20px;
+}
+
+.image_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome figcaption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+

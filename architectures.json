@@ -1,0 +1,37 @@
+
+{
+    "Architectures": {
+        "MOS 6502": {
+            "Image path": "../images/6502.png",
+            "Manufacturer": "MOS Technology, Rockwell, Synertek...",
+            "Release date": "1975",
+            "Frequency": "Entre 1 y 3 MHz",
+            "Word length": "8 bits",
+            "Direction length": "16 bits",
+            "Instructions": 56,
+            "Category": "CISC"
+        },
+
+        "Zilog Z80": {
+            "Image path": "../images/z80.png",
+            "Manufacturer": "Mostek, Synertek, Zilog, NEC, Sharp...",
+            "Release date": "Marzo de 1976",
+            "Frequency": "Entre 2.5 y 10 MHz",
+            "Word length": "8 bits",
+            "Direction length": "16 bits",
+            "Instructions": 158,
+            "Category": "CISC"
+        },
+
+        "MIPS": {
+            "Image path": "../images/mips.png",
+            "Manufacturer": "Sony, NEC, Silicon Graphics...",
+            "Release date": "1985",
+            "Frequency": "Variable",
+            "Word length": "32 o 64 bits",
+            "Direction length": "32 o 64 bits",
+            "Instructions": "Variable",
+            "Category": "RISC"
+        }
+    }
+}

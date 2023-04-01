@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HWPlanet</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <aside id="navigation_bar">
+            <figure>
+                <a href="index.html"><img id="logo" src="images/logo.png"/></a>
+            </figure>
+            <dl>
+                <dt class="content_menu">Plataformas</dt>
+                    <dd><a href="platforms/commodore64.html">Commodore 64</a></dd>
+                    <dd><a href="platforms/msx.html">MSX</a></dd>
+                    <dd><a href="platforms/nes.html">NES</a></dd>
+                    <dd><a href="platforms/nintendo64.html">Nintendo 64</a></dd>
+                    <dd><a href="platforms/ps1.html">PlayStation 1</a></dd>
+                    <dd><a href="platforms/zxspectrum.html">ZX Spectrum</a></dd>
+                <dt class="content_menu">Arquitecturas</dt>
+                    <dd><a href="architectures/6502.html">6502</a></dd>
+                    <dd><a href="architectures/z80.html">Z80</a></dd>
+                    <dd><a href="architectures/mips.html">MIPS</a></dd>
+                <dt class="content_menu">Software</dt>
+                    <dd><a href="software/arcadeemus.html">Arcades</a></dd>
+                    <dd><a href="software/multisystem.html">Multisistema</a></dd>
+                <dt id="active_item"><a href="login.html">Login</dt>
+                <dt><a href="contribute.html">Contribuir</a></dt>
+                <dt><a href="about.html">Acerca de</a></dt>
+            </dl>
+            <input type="image" id="bar_toggle" class="navigation_toggle" src="../images/hamburger_white.svg"/>
+        </aside>
+        <div id="content">
+            <main class="login_wrapper">
+                <form class="login_form">
+                    <label for="user"><b>Usuario</b></label>
+                    <input type="text" name="user" required>
+
+                    <label for="password"><b>Contraseña</b></label>
+                    <input type="password" name="password" required>
+                
+                    <label><input type="checkbox" checked="checked" name="remember">Mantener la sesión iniciada</label>
+                    <div class="button_wrapper"><button class="form_button">Iniciar sesión</button></div>
+                
+                    <a class="form_button" href="#">Recuperar nombre de usuario</a>
+                    <a class="form_button" href="#">Recuperar contraseña</a>
+                </form>
+            </main>
+            <footer>
+                <i>Hardware Planet 2023. <span id="disclaimer">La finalidad de esta página es exclusivamente informativa.</span></i>
+            </footer>
+        </div>
+        <script>
+            let form_buttons = document.getElementsByClassName('form_button');
+            for(button of form_buttons) {
+                button.addEventListener('click', () => alert('El servicio de login se encuentra temporalmente desactivado. Por favor, inténtalo de nuevo más tarde.'))
+            }
+
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+        <script src="scripts/content_menus.js"></script>
+        <script src="scripts/navigation_bar.js"></script>
+        <script src="scripts/night_mode.js"></script>
+    </body>
+</html>

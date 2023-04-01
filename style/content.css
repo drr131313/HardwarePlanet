@@ -1,0 +1,157 @@
+
+#content {
+    padding-top: 2vh;
+    padding-right: 1.6vw;
+    padding-bottom: 2vh;
+    margin-left: 2vw;
+    overflow: scroll;
+    overflow-wrap: anywhere;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content_menu {
+    cursor: pointer;
+}
+
+#content h1 {
+    border-bottom: solid 2px #000000;
+    margin-top: 1vh;
+    margin-right: 420px;     /* Necesario para que la border respete el espacio de la tabla */
+}
+
+#content .notable {
+    margin-right: 0px;
+}
+
+.navigation_toggle {
+    margin-right: 6px;
+    height: 22px;
+    cursor: pointer;
+}
+
+#header_toggle {
+    display: none;
+}
+
+footer {
+    text-align: right;
+    margin-top: auto;
+    flex: 0 0 5vh;
+}
+
+main::after {
+    content: "";
+    margin-bottom: 30px;
+    display: block;
+}
+
+#platform_image {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    padding: 10px;
+    border-width: 2px;
+    border-style: none;
+    border-color: #000000;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.platform_data {
+    display: block;
+    float: right;
+    width: 400px;
+    margin-top: 0px;
+    margin-left: 3vw;
+    margin-bottom: 2vh;
+    border: solid #000000;
+    padding: 10px;
+    text-align: left;
+    background: #D0D0D0;
+    overflow: hidden;
+}
+
+.emulator_table {
+    width: 80%;
+    text-align: center;
+    margin-top: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.30);
+}
+
+.table_wrapper {
+    overflow-x: auto;
+    padding-bottom: 10px;   /* Permite que se vea la sombra aunque haya barra de scroll */
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.emulator_table th {
+    line-height: 30px;
+}
+
+.emulator_table td {
+    min-width: 200px;
+}
+
+.affirmative_table_row {
+    background-color: #aaffaa;
+}
+
+.negative_table_row {
+    background-color: #ffaaaa;
+}
+
+li {
+    margin: 10px;
+}
+
+.preview {
+    width: 1920px;
+    height: 1080px;
+    transform: scale(0.20);
+    transform-origin: 0 0;
+}
+
+.map {
+    border: none;
+}
+
+
+.right_aligned_figure {
+    float: right;
+    text-align: center;
+    width: min-content;
+    padding: 10px;
+}
+
+.left_aligned_figure {
+    float: left;
+    text-align: center;
+    width: min-content;
+    padding: 10px;
+}
+
+.inline_figure {
+    margin-top: 4vh;
+    text-align: center;
+    width: min-content;
+    padding: 10px;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+

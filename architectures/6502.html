@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HWPlanet</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../index.css"/>
+    </head>
+    <body>
+        <aside id="navigation_bar">
+            <figure>
+                <a href="../index.html"><img id="logo" src="../images/logo.png"/></a>
+            </figure>
+            <dl>
+                <dt class="content_menu">Plataformas</dt>
+                    <dd><a href="../platforms/commodore64.html">Commodore 64</a></dd>
+                    <dd><a href="../platforms/msx.html">MSX</a></dd>
+                    <dd><a href="../platforms/nes.html">NES</a></dd>
+                    <dd><a href="../platforms/nintendo64.html">Nintendo 64</a></dd>
+                    <dd><a href="../platforms/ps1.html">PlayStation 1</a></dd>
+                    <dd><a href="../platforms/zxspectrum.html">ZX Spectrum</a></dd>
+                <dt class="content_menu">Arquitecturas</dt>
+                    <dd id="active_item">6502</dd>
+                    <dd><a href="z80.html">Z80</a></dd>
+                    <dd><a href="mips.html">MIPS</a></dd>
+                <dt class="content_menu">Software</dt>
+                    <dd><a href="../software/arcadeemus.html">Arcades</a></dd>
+                    <dd><a href="../software/multisystem.html">Multisistema</a></dd>
+                <dt><a href="../login.html">Login</a></dt>
+                <dt><a href="../contribute.html">Contribuir</a></dt>
+                <dt><a href="../about.html">Acerca de</a></dt>
+            </dl>
+            <input type="image" id="bar_toggle" class="navigation_toggle" src="../images/hamburger_white.svg"/>
+        </aside>
+        <div id="content">
+            <main>
+                <table class="platform_data" platform="MOS 6502"></table>
+                <h1><img id="header_toggle" class="navigation_toggle" src="../images/hamburger.svg"/>6502</h1>
+                <p>
+                    El MOS Technology 6502 es un procesador de 8 bits diseñado por un reducido equipo de desarrollo para MOS Technology. Dicho equipo había trabajado previamente en Motorola,
+                    concretamente en el proyecto del 6800, procesador similar a este, pero menos potente y más caro de producir.                   
+                </p>
+                <p>
+                    Cuando se introdujo en 1975, el 6502 era el microprocesador menos costoso del mercado por un margen sustancial, vendiéndose por alrededor de un sexto del coste de los diseños que competían
+                    con el mismo, como el Motorola 6800 ya mencionado o el Intel 8080. A causa de ello, los precios de los procesadores empezaron a decrementar progresivamente. Por otra parte, junto al
+                    Zilog Z80, el 6502 dio vida a una serie de proyectos que resultarían en la revolución de los ordenadores domésticos a comienzos de los años 80.
+                </p>
+                <p>
+                    Numerosas consolas y ordenadores domésticos populares en los 80 y comienzos de los 90 emplearon su arquitectura, entre los que podemos nombrar la Atari 2600, el Apple II, la Nintendo Entertainment
+                    System, el Commodore 64 o el BBC Micro. Sin embargo, poco después de que el 6502 saliese al mercado, MOS Technology fue adquirido por Commodore International, lo que obligó a ciertos fabricantes,
+                    que competían con Commodore, a modificar levemente ciertos aspectos de la arquitectura, como eliminar el soporte para BCD, <i>Binary Coded Decimal</i>, a fin de evitar conflictos legales.
+                </p>
+                <p>
+                    En 1981, Western Design Center comenzó el desarrollo de una versión CMOS, el 65C02, que continúa siendo usado en sistemas empotrados, con una producción anual de cientos de millones de chips.
+                </p>
+                <h2>Instrucciones</h2>
+                <p>
+                    A pesar de la simpleza de su conjunto de instrucciones, la arquitectura se considera CISC debido a que el tamaño de las mismas no es siempre igual.
+                    En función del modo de direccionamiento, varían entre 1 y 3 bytes (de 8 a 24 bits).
+                </p>
+                <ui>
+                    <li>
+                        Aritmético-lógicas: 15 instrucciones (ADC, AND, ASL, DEC, DEX, DEY, EOR, INC, INX, INY, LSR, ORA, ROL, ROR, SBC) que permiten modificar el contenido de los registros o la memoria empleando la ALU.
+                        Todas ellas cambian el estado del procesador de modo que no sea necesario realizar comparaciones a posteriori con los valores obtenidos.
+                    </li>
+                    <li>
+                        Salto condicional: 8 instrucciones (BPL, BMI, BVC, BVS, BCC, BCS, BNE, BEQ) que permiten realizar saltos en función del registro de estado del procesador. No actualizan dicho estado
+                        y el número de ciclos que requieren varía en función de si el salto se toma y si se cruza a otra página de memoria.
+                    </li>
+                    <li>
+                        Salto incondicional: 2 instrucciones (JSR, JMP) que permiten modificar el flujo de ejecución del programa. La diferencia entre ellas es que una almacena el registro contador de programa en la
+                        pila (JSR), para posibilitar el regreso al código inicial, y la otra no lo hace (JMP).
+                    </li>
+                    <li>
+                        Manipulación de la pila: 4 instrucciones (PHA, PHP, PLA, PLP) que permiten añadir y eliminar valores de la pila, almacenada en RAM.
+                    </li>
+                    <li>
+                        Carga y almacenamiento en memoria: 6 instrucciones (LDA, LDX, LDY, STA, STX, STY) que permiten leer y almacenar datos en posiciones arbitrarias de la memoria direccionable por la CPU.
+                    </li>
+                    <li>
+                        Modificación de estado: 7 instrucciones (CLC, CLD, CLI, CLV, SEC, SED, SEI) que permiten alterar el registro de estado del procesador. 
+                    </li>
+                    <li>
+                        Transferencia: 6 instrucciones (TAX, TAY, TSX, TXA, TXS, TYA) que permiten copiar el contenido de un registro en otro.
+                    </li>
+                    <li>
+                        Misceláneas: Además de las mencionadas, existen algunas otras instrucciones con propósitos muy específicos, como causar interrupciones (BRK), retornar de las mismas (RTI) o de
+                        subrutinas (RTS), no hacer nada (NOP) o realizar una operación que permita modificar el estado del procesador, descartando el resultado posteriormente (BIT).
+                    </li>
+                </ui>
+                <h2>Referencia adicional</h2>
+                <p>
+                    Existen numerosas webs de referencia para aquellos interesados en el funcionamiento de sus instrucciones, modos de direccionamiento u otras particularidades
+                    del hardware como las lecturas y escrituras nulas (cada ciclo es de acceso a memoria), o quienes busquen desarrollar un emulador para alguno de los sistemas que
+                    empleen la arquitectura, como el <a href="../platforms/commodore64.html">Commodore 64</a> o la <a href="../platforms/nes.html">Nintendo Entertainment System</a>.
+                </p>
+                <p>
+                    Cabe destacar dos páginas en concreto:
+                    <a href="http://www.6502.org/">6502.org</a> y
+                    <a href="https://www.masswerk.at/6502/">Masswerk.at</a>
+                </p>
+            </main>
+            <footer>
+                <i>Hardware Planet 2023. <span id="disclaimer">La finalidad de esta página es exclusivamente informativa.</span></i>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+        <script src="../scripts/fetch_architecture_data.js"></script>
+        <script src="../scripts/content_menus.js"></script>
+        <script src="../scripts/navigation_bar.js"></script>
+        <script src="../scripts/night_mode.js"></script>
+        <script src="../scripts/preview_popups.js"></script>
+    </body>
+</html>

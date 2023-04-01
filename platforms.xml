@@ -1,0 +1,86 @@
+<?xml
+   version = "1.0"
+   encoding = "UTF-8"
+?>
+<platform_list>
+
+    <platform>
+        <image_path>../images/commodore64.png</image_path>
+        <name>Commodore 64</name>
+        <manufacturer>Commodore</manufacturer>
+        <release_date>Agosto de 1982</release_date>
+        <discontinuation_date>Abril de 1994</discontinuation_date>
+        <units_sold>Entre 12,5 y 17 millones</units_sold>
+        <architecture>
+            <name>6502</name>
+            <link>../architectures/6502.html</link>
+        </architecture>
+    </platform>
+
+    <platform>
+        <image_path>../images/msx.png</image_path>
+        <name>MSX</name>
+        <manufacturer>Sony, Panasonic, Samsung, Sharp...</manufacturer>
+        <release_date>21 de octubre de 1983</release_date>
+        <discontinuation_date>1993</discontinuation_date>
+        <units_sold>9 millones</units_sold>
+        <architecture>
+            <name>Z80</name>
+            <link>../architectures/z80.html</link>
+        </architecture>
+    </platform>
+
+    <platform>
+        <image_path>../images/nes.png</image_path>
+        <name>Nintendo Entertainment System</name>
+        <manufacturer>Nintendo</manufacturer>
+        <release_date>15 de julio de 1983 (como Famicom)</release_date>
+        <discontinuation_date>2003 (como Famicom)</discontinuation_date>
+        <units_sold>61.91 millones</units_sold>
+        <architecture>
+            <name>6502</name>
+            <link>../architectures/6502.html</link>
+        </architecture>
+    </platform>
+
+    <platform>
+        <image_path>../images/nintendo64.png</image_path>
+        <name>Nintendo 64</name>
+        <manufacturer>Nintendo</manufacturer>
+        <release_date>23 de junio de 1996</release_date>
+        <discontinuation_date>30 de abril de 2002</discontinuation_date>
+        <units_sold>32,93 millones</units_sold>
+        <architecture>
+            <name>MIPS</name>
+            <link>../architectures/mips.html</link>
+        </architecture>
+    </platform>
+
+    <platform>
+        <image_path>../images/ps1.png</image_path>
+        <name>PlayStation</name>
+        <manufacturer>Sony</manufacturer>
+        <release_date>3 de diciembre de 1994</release_date>
+        <discontinuation_date>23 de marzo de 2006</discontinuation_date>
+        <units_sold>102,4 millones de consolas</units_sold>
+        <architecture>
+            <name>MIPS</name>
+            <link>../architectures/mips.html</link>
+        </architecture>
+    </platform>
+
+    <platform>
+        <image_path>../images/zxspectrum.png</image_path>
+        <name>ZX Spectrum</name>
+        <manufacturer>Sinclair</manufacturer>
+        <release_date>23 de abril de 1982</release_date>
+        <discontinuation_date>1992</discontinuation_date>
+        <units_sold>5 millones</units_sold>
+        <architecture>
+            <name>Z80</name>
+            <link>../architectures/z80.html</link>
+        </architecture>
+    </platform>
+
+</platform_list>
+

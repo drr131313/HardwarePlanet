@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HWPlanet</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../index.css"/>
+    </head>
+    <body>
+        <aside id="navigation_bar">
+            <figure>
+                <a href="../index.html"><img id="logo" src="../images/logo.png"/></a>
+            </figure>
+            <dl>
+                <dt class="content_menu">Plataformas</dt>
+                    <dd><a href="../platforms/commodore64.html">Commodore 64</a></dd>
+                    <dd><a href="../platforms/msx.html">MSX</a></dd>
+                    <dd><a href="../platforms/nes.html">NES</a></dd>
+                    <dd><a href="../platforms/nintendo64.html">Nintendo 64</a></dd>
+                    <dd><a href="../platforms/ps1.html">PlayStation 1</a></dd>
+                    <dd><a href="../platforms/zxspectrum.html">ZX Spectrum</a></dd>
+                <dt class="content_menu">Arquitecturas</dt>
+                    <dd><a href="../architectures/6502.html">6502</a></dd>
+                    <dd><a href="../architectures/z80.html">Z80</a></dd>
+                    <dd><a href="../architectures/mips.html">MIPS</a></dd>
+                <dt class="content_menu">Software</dt>
+                    <dd><a href="../software/arcadeemus.html">Arcades</a></dd>
+                    <dd id="active_item">Multisistema</dd>
+                <dt><a href="../login.html">Login</a></dt>
+                <dt><a href="../contribute.html">Contribuir</a></dt>
+                <dt><a href="../about.html">Acerca de</a></dt>
+            </dl>
+            <input type="image" id="bar_toggle" class="navigation_toggle" src="../images/hamburger_white.svg"/>
+        </aside>
+        <div id="content">
+            <main>
+                <h1 class="notable"><img id="header_toggle" class="navigation_toggle" src="../images/hamburger.svg"/>Emuladores multisistema</h1>
+                <figure class="right_aligned_figure">
+                    <img src="../images/openemu.png" alt="OpenEmu" height="400"/>
+                    <figcaption>Pantalla de selección de OpenEmu</figcaption>
+                </figure>
+                <p>
+                    Los emuladores multisistema se centran en emular múltiples configuraciones de hardware diferentes en el mismo programa. Pueden centrarse en los sistemas de una
+                    sola compañía a causa de sus similitudes o en varios de empresas diferentes, que compartan, por ejemplo, la arquitectura de su CPU.
+                </p>
+                <h2>Emulación</h2>
+                <p>
+                    Al igual que en el caso de la emulación de plataformas arcade, los emuladores multisistema varían mucho en precisión, rendimiento y prestaciones de acuerdo
+                    con el hardware particular. Mientras que las consolas y ordenadores antiguos no suelen presentar grandes problemas, con el incremento en complejidad de los
+                    sistemas modernos se producen más fallos gráficos, problemas de rendimiento y ausencias de modo turbo, soporte para trucos u otras características que
+                    podrían ser esperables en este marco de software.
+                </p>
+                <figure class="inline_figure">
+                    <img src="../images/mednafen.webp" alt="Mednafen" height="300"/>
+                    <figcaption>Menú principal de Mednafen</figcaption>
+                </figure>
+                <div class="table_wrapper">
+                    <table class="emulator_table">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Plataformas</th>
+                        <th>Lenguaje de programación</th>
+                        <th>Sistemas emulados</th>
+                        <th>Código abierto</th>
+                        <th>En desarrollo</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/mamedev/mame">MAME</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/> <img src="../images/freebsd.png" alt="FreeBSD"/></td>
+                        <td>C++, C, Python</td>
+                        <td>Miles</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://sourceforge.net/projects/mednafen">Mednafen</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/> <img src="../images/freebsd.png" alt="FreeBSD"/></td>
+                        <td>C++, C, Ensamblador</td>
+                        <td>15</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/OpenEmu">OpenEmu</a></td>
+                        <td><img src="../images/macos.png" alt="MacOS"/></td>
+                        <td>Swift, Objective-C, C</td>
+                        <td>35</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://www.arts-union.ru/node/23">Phoenix</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/></td>
+                        <td>Desconocido</td>
+                        <td>5</td>
+                        <td class="negative_table_row">✗</td>
+                        <td class="negative_table_row">✗</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/TomHarte/CLK">CLK</a></td>
+                        <td><img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/> <img src="../images/freebsd.png" alt="FreeBSD"/></td>
+                        <td>C++</td>
+                        <td>14</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/vpinball/pinmame">Z64K</a></td>
+                        <td><img src="../images/java.png" alt="Java"></td>
+                        <td>Probablemente Java</td>
+                        <td>5</td>
+                        <td class="negative_table_row">✗</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    </table>
+                </div>
+            </main>
+            <footer>
+                <i>Hardware Planet 2023. <span id="disclaimer">La finalidad de esta página es exclusivamente informativa.</span></i>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+        <script src="../scripts/content_menus.js"></script>
+        <script src="../scripts/cookie_notification.js"></script>
+        <script src="../scripts/fetch_platform_data.js"></script>
+        <script src="../scripts/navigation_bar.js"></script>
+        <script src="../scripts/night_mode.js"></script>
+        <script src="../scripts/preview_popups.js"></script>
+    </body>
+</html>

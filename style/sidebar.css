@@ -1,0 +1,44 @@
+
+#navigation_bar {
+    animation-name: showBar;
+    animation-duration: 1s;
+    background: #000000;
+    color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    flex: 0 0 10vw;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+#navigation_bar dt {
+    font-weight: bolder;
+}
+
+#navigation_bar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#bar_toggle {
+    margin-top: auto;
+    margin-bottom: 2vh;
+}
+
+#logo {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+@keyframes showBar {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+

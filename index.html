@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HWPlanet</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <aside id="navigation_bar">
+            <figure>
+                <a href="index.html"><img id="logo" src="images/logo.png"/></a>
+            </figure>
+            <dl>
+                <dt class="content_menu">Plataformas</dt>
+                    <dd><a href="platforms/commodore64.html">Commodore 64</a></dd>
+                    <dd><a href="platforms/msx.html">MSX</a></dd>
+                    <dd><a href="platforms/nes.html">NES</a></dd>
+                    <dd><a href="platforms/nintendo64.html">Nintendo 64</a></dd>
+                    <dd><a href="platforms/ps1.html">PlayStation 1</a></dd>
+                    <dd><a href="platforms/zxspectrum.html">ZX Spectrum</a></dd>
+                <dt class="content_menu">Arquitecturas</dt>
+                    <dd><a href="architectures/6502.html">6502</a></dd>
+                    <dd><a href="architectures/z80.html">Z80</a></dd>
+                    <dd><a href="architectures/mips.html">MIPS</a></dd>
+                <dt class="content_menu">Software</dt>
+                    <dd><a href="software/arcadeemus.html">Arcades</a></dd>
+                    <dd><a href="software/multisystem.html">Multisistema</a></dd>
+                <dt><a href="login.html">Login</a></dt>
+                <dt><a href="contribute.html">Contribuir</a></dt>
+                <dt><a href="about.html">Acerca de</a></dt>
+            </dl>
+        </aside>
+        <div id="content">
+            <main class="welcome">
+                <h2><input type="image" id="header_toggle" class="navigation_toggle" src="../images/hamburger.svg"/>Bienvenido a Hardware Planet</h2>
+                <h3>Una web de referencia sobre...</h3>
+                <div class="image_row">
+                    <figure>
+                        <img src="images/computer_museum.jpg" height="300"/>
+                        <figcaption>Hardware</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/architecture.png" height="300"/>
+                        <figcaption>Arquitecturas</figcaption>
+                    </figure>
+                </div>
+                <figure>
+                    <img src="images/emulation.jpg" height="300"/>
+                    <figcaption>Emulación</figcaption>
+                </figure>
+                <h3>
+                    ...en que todo el mundo puede <a href="contribute.html">colaborar</a>
+                </h3>
+            </main>
+            <footer>
+                <i>Hardware Planet 2023. <span id="disclaimer">La finalidad de esta página es exclusivamente informativa.</span></i>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+        <script src="scripts/content_menus.js"></script>
+        <script src="scripts/navigation_bar.js"></script>
+        <script src="scripts/night_mode.js"></script>
+    </body>
+</html>

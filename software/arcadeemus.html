@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HWPlanet</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../index.css"/>
+    </head>
+    <body>
+        <aside id="navigation_bar">
+            <figure>
+                <a href="../index.html"><img id="logo" src="../images/logo.png"/></a>
+            </figure>
+            <dl>
+                <dt class="content_menu">Plataformas</dt>
+                    <dd><a href="../platforms/commodore64.html">Commodore 64</a></dd>
+                    <dd><a href="../platforms/msx.html">MSX</a></dd>
+                    <dd><a href="../platforms/nes.html">NES</a></dd>
+                    <dd><a href="../platforms/nintendo64.html">Nintendo 64</a></dd>
+                    <dd><a href="../platforms/ps1.html">PlayStation 1</a></dd>
+                    <dd><a href="../platforms/zxspectrum.html">ZX Spectrum</a></dd>
+                <dt class="content_menu">Arquitecturas</dt>
+                    <dd><a href="../architectures/6502.html">6502</a></dd>
+                    <dd><a href="../architectures/z80.html">Z80</a></dd>
+                    <dd><a href="../architectures/mips.html">MIPS</a></dd>
+                <dt class="content_menu">Software</dt>
+                    <dd id="active_item">Arcades</dd>
+                    <dd><a href="../software/multisystem.html">Multisistema</a></dd>
+                <dt><a href="../login.html">Login</a></dt>
+                <dt><a href="../contribute.html">Contribuir</a></dt>
+                <dt><a href="../about.html">Acerca de</a></dt>
+            </dl>
+            <input type="image" id="bar_toggle" class="navigation_toggle" src="../images/hamburger_white.svg"/>
+        </aside>
+        <div id="content">
+            <main>
+                <h1 class="notable"><img id="header_toggle" class="navigation_toggle" src="../images/hamburger.svg"/>Arcades</h1>
+                <figure class="right_aligned_figure">
+                    <img src="../images/arcade.jpg" alt="Establecimiento arcade" height="300"/>
+                    <figcaption>Un arcade actual en Akihabara, Tokio. El barrio de la capital nipona es uno de los pocos lugares en que la cultura de las recreativas sobrevive.</figcaption>
+                </figure>
+                <p>
+                    Los arcades eran establecimientos que ofrecían múltiples máquinas para jugar a videojuegos a cambio de un pago por tiempo o número de intentos. Generalmente
+                    el hardware en cuestión estaba especializado y adaptado al juego concreto que ejecutase, con el fin de maximizar el rendimiento y la calidad gráfica para
+                    poder competir con otras alternativas como las consolas domésticas y los ordenadores de la época. 
+                </p>
+                <h2>Historia</h2>
+                <p>
+                    Para hablar sobre la historia de los videojuegos arcade, es necesario remontarse a 1960, aunque no fue hasta finales de la década posterior cuando comenzaron
+                    a ganar popularidad. Ese periodo, conocido como la "era dorada" de los arcades, vio el nacimiento de títulos tales como Space Invaders, Asteroids, Pac-Man y
+                    Donkey Kong.
+                </p>
+                <p>
+                    Space Invaders, lanzado en 1978 por Taito, fue el primer juego en capturar la atención del público general, convirtiéndose así en un fenómeno cultural. Su gameplay,
+                    simple pero adictivo, unido a la música icónica y los efectos de sonido, lo convirtieron en un éxito instantáneo. Dicho éxito allanó el terreno para otros títulos ya
+                    mencionados como Pac-Man, que también se convirtieron en elementos de la cultura popular.
+                </p>
+                <figure class="left_aligned_figure">
+                    <img src="../images/space_invaders.gif" alt="Space Invaders" height="300"/>
+                    <figcaption><i>Space Invaders (1978)</i></figcaption>
+                </figure>
+                <p>
+                    Durante la "era dorada", los arcades se convirtieron en lugares de reunión habituales para adolescentes y adultos jóvenes. El aspecto social de estos negocios resultó
+                    ser un factor significativo en la popularización de los videojuegos arcade en sí, pues la experiencia de jugar con amigos y desconocidos en un contexto público era a menudo
+                    tan importante como los títulos en sí.
+                </p>
+                <p>
+                    Sin embargo, a mediados de 1980, el éxito de los establecimientos comenzó a decaer, a raíz del lanzamiento de consolas como la Atari 2600 y la <a href="../platforms/nes.html">Nintendo Entertainment System</a>
+                    y su influencia en la industria del videojuego. La comodidad de jugar en casa, unida a notorias mejoras en el apartado gráfico y el gameplay, hizo parecer a los arcades obsoletos,
+                    obligándolos a competir en el apartado técnico.
+                </p>
+                <p>
+                    En la década de los 90, se produjo un resurgimiento gracias al nacimiento del género de peleas, con títulos como Street Fighter II y Mortal Kombat. Estos ofrecían una
+                    jugabilidad fluida y competitiva que apelaba a una nueva generación de jugadores. Sin embargo, el modelo de consolas domésticas, apoyado más tarde por el surgimiento de Internet
+                    y el juego en línea, terminó por imponerse definivamente, produciendo el declive de la industria arcade.
+                </p>
+                <figure class="right_aligned_figure">
+                    <img src="../images/street_fighter_ii.webp" alt="Street Fighter II" height="300"/>
+                    <figcaption><i>Street Fighter II (1991)</i></figcaption>
+                </figure>
+                <p>
+                    Hoy en día, los juegos arcade aún son apreciados por ciertas comunidades, pero se han convertido en obras muy especializadas. La mayoría de ellas ofrecen experiencias
+                    centradas en la inmersión a través de tecnología que no ha llegado masivamente a los hogares como la realidad virtual o los sensores de movimiento. Aunque es posible
+                    que no recobren su popularidad pasada, siguen evolucionando y adaptándose a nuevas tendencias.
+                </p> 
+                <h2>Emulación</h2>
+                <p>
+                    La emulación de esta clase de sistemas se suele centrar en comprender múltiples tipos de hardware en el mismo programa, si bien cada proyecto se especializa
+                    en un ámbito concreto de máquinas recreativas. Por ejemplo, Hypseus Singe se centra en aquellas basadas en el formato LaserDisc, mientras que TeknoParrot está
+                    especializado en las placas arcade compatibles con la arquitectura x86-64 y DICE emula sistemas sin CPU, que están compuestos únicamente por lógica discreta.
+                </p>
+                <p>
+                    Por otra parte, la precisión de los emuladores varía ampliamente en función de la placa empleada por el título en cuestión e incluso entre juegos que utilizan
+                    el mismo hardware. Resulta difícil, en consecuencia, recomendar un software u otro ya que pueden ofrecer una elevada fidelidad en ciertos contextos y en otros no.
+                </p>
+                <p>
+                    En muchas ocasiones, el proceso de desarrollo de emuladores puede ser complicado a causa de las complejas y variadas configuraciones hardware de estas máquinas.
+                    Además, los desarrolladores han de comprender exactamente la relación entre los programas ejecutados y el hardware, entendiendo incluso los trucos empleados para aumentar
+                    el rendimiento obtenido en base a la arquitectura computacional concreta.
+                </p>
+                <div class="table_wrapper">
+                    <table class="emulator_table">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Plataformas</th>
+                        <th>Lenguaje de programación</th>
+                        <th>Sistemas emulados</th>
+                        <th>Código abierto</th>
+                        <th>En desarrollo</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/mamedev/mame">MAME</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/> <img src="../images/freebsd.png" alt="FreeBSD"/></td>
+                        <td>C++, C y Python</td>
+                        <td>Miles, no solamente arcades</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/finalburnneo/FBNeo">FinalBurn Neo</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/></td>
+                        <td>C++</td>
+                        <td>Cientos</td>
+                        <td class="negative_table_row">✗</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/DirtBagXon/hypseus-singe">Hypseus Singe</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/></td>
+                        <td>C++</td>
+                        <td>1 (LaserDisc)</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/teknogods/OpenParrot">TeknoParrot</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/></td>
+                        <td>C++</td>
+                        <td>20 (Arquitectura x86-64)</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/vpinball/pinmame">PinMAME</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/></td>
+                        <td>C</td>
+                        <td>750 (Pinball)</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/vpinball/pinmame">DICE</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/></td>
+                        <td>C++</td>
+                        <td>20 (Lógica discreta)</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    </table>
+                </div>
+            </main>
+            <footer>
+                <i>Hardware Planet 2023. <span id="disclaimer">La finalidad de esta página es exclusivamente informativa.</span></i>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+        <script src="../scripts/content_menus.js"></script>
+        <script src="../scripts/cookie_notification.js"></script>
+        <script src="../scripts/fetch_platform_data.js"></script>
+        <script src="../scripts/navigation_bar.js"></script>
+        <script src="../scripts/night_mode.js"></script>
+        <script src="../scripts/preview_popups.js"></script>
+    </body>
+</html>

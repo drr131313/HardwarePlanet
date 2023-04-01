@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HWPlanet</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../index.css"/>
+    </head>
+    <body>
+        <aside id="navigation_bar">
+            <figure>
+                <a href="../index.html"><img id="logo" src="../images/logo.png"/></a>
+            </figure>
+            <dl>
+                <dt class="content_menu">Plataformas</dt>
+                    <dd><a href="commodore64.html">Commodore 64</a></dd>
+                    <dd><a href="msx.html">MSX</a></dd>
+                    <dd><a href="nes.html">NES</a></dd>
+                    <dd><a href="nintendo64.html">Nintendo 64</a></dd>
+                    <dd><a href="ps1.html">PlayStation 1</a></dd>
+                    <dd id="active_item">ZX Spectrum</dd>
+                <dt class="content_menu">Arquitecturas</dt>
+                    <dd><a href="../architectures/6502.html">6502</a></dd>
+                    <dd><a href="../architectures/z80.html">Z80</a></dd>
+                    <dd><a href="../architectures/mips.html">MIPS</a></dd>
+                <dt class="content_menu">Software</dt>
+                    <dd><a href="../software/arcadeemus.html">Arcades</a></dd>
+                    <dd><a href="../software/multisystem.html">Multisistema</a></dd>
+                <dt><a href="../login.html">Login</a></dt>
+                <dt><a href="../contribute.html">Contribuir</a></dt>
+                <dt><a href="../about.html">Acerca de</a></dt>
+            </dl>
+            <input type="image" id="bar_toggle" class="navigation_toggle" src="../images/hamburger_white.svg"/>
+        </aside>
+        <div id="content">
+            <main>
+                <table class="platform_data" platform="ZX Spectrum"></table>
+                <h1><img id="header_toggle" class="navigation_toggle" src="../images/hamburger.svg"/>ZX Spectrum</h1>
+                <p>
+                    El ZX Spectrum es un ordenador doméstico de 8-bits desarrollado por Sinclair Research y lanzado al mercado en 1982, convirtiéndose en el microordenador más vendido en el Reino Unido.
+                    Durante su desarrollo, fue conocido como ZX81 Colour o ZX82, en relación a su predecesor, el Sinclair ZX81, que solo contaba con gráficos en blanco y negro.
+                </p>
+                <p>
+                    El sistema estaba orientado a una audiencia general, de modo similar al Commodore 64 en Estados Unidos o el Thomson MO5 en Francia. Su introducción dio lugar a un
+                    auge de desarrollo de hardware y software, incluso entre aficionados a la informática, que en muchos casos desarrollaron sus primeros programas empleándolo.
+                </p>
+                <p>
+                    Se llegaron a lanzar hasta 6 modelos del sistema, que diferían no solo en la cantidad de RAM, sino también en la presencia de accesorios como lectores de discos magnéticos,
+                    <i>floppy disks</i>, logrando en total unas ventas de alrededor de 5 millones de dispositivos, sin contar clones no oficiales.
+                </p>
+                <h2>Especificaciones</h2>
+                <ul>
+                    <li>
+                        CPU: Z80A de 8 bits, a 3,5 MHz, siguiendo la arquitectura <a href="../architectures/mips.html">Z80</a> (CISC).
+                    </li>
+                    <li>
+                        RAM: Entre 16 y 128 KiB
+                    </li>
+                    <li>
+                        ROM: 16 KiB que contenían un intérprete de BASIC, así como los caracteres ASCII empleados por el sistema.
+                    </li>
+                    <li>
+                        Unidad de procesamiento gráfico: Ferranti ULA, ofreciendo una resolución de 256x196 píxeles, pero sin soporte para sprites.
+                    </li>
+                    <li>
+                        Teclado: QWERTY de 40 teclas con capacidad para programar funciones mediante BASIC.
+                    </li>
+                    <li>
+                        Medios: Cassettes y floppy disks en las últimas revisiones del hardware.
+                    </li>
+                </ul>
+                <h2>Emulación</h2>
+                <p>
+                    Debido a su elevada popularidad en el continente europeo, que dio lugar a una comunidad muy dedicada, 
+                    existen numerosos emuladores para el sistema, con elevada precisión:
+                </p>
+                <div class="table_wrapper">
+                    <table class="emulator_table">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Plataformas</th>
+                        <th>Lenguaje de programación</th>
+                        <th>Precisión</th>
+                        <th>Código abierto</th>
+                        <th>En desarrollo</th>
+                        <th>Recomendado</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://sourceforge.net/projects/eightyone-sinclair-emulator/files">EightyOne</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/></td>
+                        <td>C</td>
+                        <td>Alta</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://fuse-emulator.sourceforge.net">FUSE</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/> <img src="../images/freebsd.png" alt="FreeBSD"/></td>
+                        <td>C</td>
+                        <td>Alta</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/TASEmulators/BizHawk">BizHawk</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/></td>
+                        <td>C#</td>
+                        <td>Media</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="negative_table_row">✗</td>
+                    </tr>
+                    </table>
+                </div>
+            </main>
+            <footer>
+                <i>Hardware Planet 2023. <span id="disclaimer">La finalidad de esta página es exclusivamente informativa.</span></i>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+        <script src="../scripts/fetch_platform_data.js"></script>
+        <script src="../scripts/content_menus.js"></script>
+        <script src="../scripts/navigation_bar.js"></script>
+        <script src="../scripts/night_mode.js"></script>
+        <script src="../scripts/preview_popups.js"></script>
+    </body>
+</html>

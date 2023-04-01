@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HWPlanet</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <aside id="navigation_bar">
+            <figure>
+                <a href="index.html"><img id="logo" src="images/logo.png"/></a>
+            </figure>
+            <dl>
+                <dt class="content_menu">Plataformas</dt>
+                    <dd><a href="platforms/commodore64.html">Commodore 64</a></dd>
+                    <dd><a href="platforms/msx.html">MSX</a></dd>
+                    <dd><a href="platforms/nes.html">NES</a></dd>
+                    <dd><a href="platforms/nintendo64.html">Nintendo 64</a></dd>
+                    <dd><a href="platforms/ps1.html">PlayStation 1</a></dd>
+                    <dd><a href="platforms/zxspectrum.html">ZX Spectrum</a></dd>
+                <dt class="content_menu">Arquitecturas</dt>
+                    <dd><a href="architectures/6502.html">6502</a></dd>
+                    <dd><a href="architectures/z80.html">Z80</a></dd>
+                    <dd><a href="architectures/mips.html">MIPS</a></dd>
+                <dt class="content_menu">Software</dt>
+                    <dd><a href="software/arcadeemus.html">Arcades</a></dd>
+                    <dd><a href="software/multisystem.html">Multisistema</a></dd>
+                <dt><a href="login.html">Login</a></dt>
+                <dt><a href="contribute.html">Contribuir</a></dt>
+                <dt id="active_item">Acerca de</dt>
+            </dl>
+            <input type="image" id="bar_toggle" class="navigation_toggle" src="../images/hamburger_white.svg"/>
+        </aside>
+        <div id="content">
+            <main>
+                    <h1 class="notable"><img id="header_toggle" class="navigation_toggle" src="../images/hamburger.svg"/>Acerca de</h1>
+                    <p>
+                        Esta web ha sido diseñada e implementada por Daniel Ramos Rodríguez, estudiante de la Universidad de Santiago de Compostela (USC).
+                    </p>
+                    <p>
+                        Correo de contacto: daniel.ramos.rodriguez@rai.usc.es
+                    </p>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.9763409741718!2d-8.562576584377899!3d42.87334351052388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe72a954b9a9%3A0x33af61a845699b5d!2sEscuela%20T%C3%A9cnica%20Superior%20de%20Ingenier%C3%ADa%20USC!5e0!3m2!1ses!2ses!4v1680308518052!5m2!1ses!2ses" width="60%" height="600px"></iframe>
+            </main>
+            <footer>
+                <i>Hardware Planet 2023. <span id="disclaimer">La finalidad de esta página es exclusivamente informativa.</span></i>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+        <script src="scripts/content_menus.js"></script>
+        <script src="scripts/navigation_bar.js"></script>
+        <script src="scripts/night_mode.js"></script>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HWPlanet</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../index.css"/>
+    </head>
+    <body>
+        <aside id="navigation_bar">
+            <figure>
+                <a href="../index.html"><img id="logo" src="../images/logo.png"/></a>
+            </figure>
+            <dl>
+                <dt class="content_menu">Plataformas</dt>
+                    <dd><a href="commodore64.html">Commodore 64</a></dd>
+                    <dd id="active_item">MSX</dd>
+                    <dd><a href="nes.html">NES</a></dd>
+                    <dd><a href="nintendo64.html">Nintendo 64</a></dd>
+                    <dd><a href="ps1.html">PlayStation 1</a></dd>
+                    <dd><a href="zxspectrum.html">ZX Spectrum</a></dd>
+                <dt class="content_menu">Arquitecturas</dt>
+                    <dd><a href="../architectures/6502.html">6502</a></dd>
+                    <dd><a href="../architectures/z80.html">Z80</a></dd>
+                    <dd><a href="../architectures/mips.html">MIPS</a></dd>
+                <dt class="content_menu">Software</dt>
+                    <dd><a href="../software/arcadeemus.html">Arcades</a></dd>
+                    <dd><a href="../software/multisystem.html">Multisistema</a></dd>
+                <dt><a href="../login.html">Login</a></dt>
+                <dt><a href="../contribute.html">Contribuir</a></dt>
+                <dt><a href="../about.html">Acerca de</a></dt>
+            </dl>
+            <input type="image" id="bar_toggle" class="navigation_toggle" src="../images/hamburger_white.svg"/>
+        </aside>
+        <div id="content">
+            <main>
+                <table class="platform_data" platform="MSX"></table>
+                <h1><img id="header_toggle" class="navigation_toggle" src="../images/hamburger.svg"/>MSX</h1>
+                <p>
+                    El MSX es un ordenador doméstico con arquitectura estandarizada, anunciado a mediados de 1983. Fue inicialmente concebido por Microsoft como
+                    un producto destinado al mercado oriental, y publicitado junto a Kazuhiko Nishi, director de ASCII Corporation, como un intento de crear estándares unificados
+                    entre los computadores domésticos en una época en que los microordenadores contaban con distintas arquitecturas.
+                </p>
+                <p>
+                    Los sistemas MSX se volvieron populares en Japón así como en otros países, llegando a vender 7 millones de unidades únicamente en el país nipón. Sin embargo, y
+                    a pesar de los esfuerzos de Microsoft, pocos de ellos fueron comercializados en Estados Unidos.
+                </p>
+                <p>
+                    En lo relativo al software, antes del auge de la NES (o Famicom en Japón), el MSX era la plataforma de desarrollo mayoritaria entre los estudios japoneses,
+                    contando con títulos de Konami (destacando especialmente Metal Gear) o Hudson Soft. A lo largo de su década de vida, se llegaron a lanzar más de 1000 juegos,
+                    aunque se desconoce el número final.
+                </p>
+                <h2>Especificaciones</h2>
+                <!--Everything under this is garbage data. Remove it.-->
+                <ul>
+                    <li>
+                        CPU: Z80A de 8 bits, a 3,5 MHz, siguiendo la arquitectura <a href="../architectures/mips.html">Z80</a> (CISC), u otro procesador compatible con la arquitectura.
+                    </li>
+                    <li>
+                        RAM: Entre 8 y 512 KiB, dependiendo del modelo.
+                    </li>
+                    <li>
+                        Unidad de procesamiento gráfico: Texas Instruments TMS9918 (MSX1) o Yamaha V9938 (MSX2 y posteriores), con soporte para renderizado de sprites.
+                    </li>
+                    <li>
+                        Unidad de sonido: General Instrument AY-3-8910 (MSX1), Yamaha YM2149 (MSX2) o Yamaha YM2413 (MSX2+ y posteriores).
+                    </li>
+                    <li>
+                        Medios: Floppy disks, cassettes y cartuchos.
+                    </li>
+                </ul>
+                <h2>Emulación</h2>
+                <p>
+                    Existen múltiples emuladores para esta plataforma, algunos de ellos de elevada precisión y código abierto:
+                </p>
+                <div class="table_wrapper">
+                    <table class="emulator_table">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Plataformas</th>
+                        <th>Lenguaje de programación</th>
+                        <th>Precisión</th>
+                        <th>Código abierto</th>
+                        <th>En desarrollo</th>
+                        <th>Recomendado</th>
+                    </tr>
+                    <tr>
+                        <td><a href="http://openmsx.org/">openMSX</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/> <img src="../images/freebsd.png" alt="FreeBSD"/></td>
+                        <td>C++</td>
+                        <td>A nivel de ciclo</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://bluemsx.msxblue.com/download.html">blueMSX</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/> <img src="../images/freebsd.png" alt="FreeBSD"/></td>
+                        <td>C</td>
+                        <td>A nivel de ciclo</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="negative_table_row">✗</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://webmsx.org/">WebMSX</a></td>
+                        <td><img src="../images/web.png" alt="Web"/></td>
+                        <td>JavaScript</td>
+                        <td>Alta</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="negative_table_row">✗</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://fms.komkon.org/fMSX/">fMSX</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/> <img src="../images/freebsd.png" alt="FreeBSD"/></td>
+                        <td>C</td>
+                        <td>Media</td>
+                        <td class="negative_table_row">✗</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="negative_table_row">✗</td>
+                    </tr>
+                    </table>
+                </div>
+            </main>
+            <footer>
+                <i>Hardware Planet 2023. <span id="disclaimer">La finalidad de esta página es exclusivamente informativa.</span></i>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+        <script src="../scripts/fetch_platform_data.js"></script>
+        <script src="../scripts/content_menus.js"></script>
+        <script src="../scripts/navigation_bar.js"></script>
+        <script src="../scripts/night_mode.js"></script>
+        <script src="../scripts/preview_popups.js"></script>
+    </body>
+</html>

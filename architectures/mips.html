@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HWPlanet</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../index.css"/>
+    </head>
+    <body>
+        <aside id="navigation_bar">
+            <figure>
+                <a href="../index.html"><img id="logo" src="../images/logo.png"/></a>
+            </figure>
+            <dl>
+                <dt class="content_menu">Plataformas</dt>
+                    <dd><a href="../platforms/commodore64.html">Commodore 64</a></dd>
+                    <dd><a href="../platforms/msx.html">MSX</a></dd>
+                    <dd><a href="../platforms/nes.html">NES</a></dd>
+                    <dd><a href="../platforms/nintendo64.html">Nintendo 64</a></dd>
+                    <dd><a href="../platforms/ps1.html">PlayStation 1</a></dd>
+                    <dd><a href="../platforms/zxspectrum.html">ZX Spectrum</a></dd>
+                <dt class="content_menu">Arquitecturas</dt>
+                    <dd><a href="6502.html">6502</a></dd>
+                    <dd><a href="z80.html">Z80</a></dd>
+                    <dd id="active_item">MIPS</dd>
+                <dt class="content_menu">Software</dt>
+                    <dd><a href="../software/arcadeemus.html">Arcades</a></dd>
+                    <dd><a href="../software/multisystem.html">Multisistema</a></dd>
+                <dt><a href="../login.html">Login</a></dt>
+                <dt><a href="../contribute.html">Contribuir</a></dt>
+                <dt><a href="../about.html">Acerca de</a></dt>
+            </dl>
+            <input type="image" id="bar_toggle" class="navigation_toggle" src="../images/hamburger_white.svg"/>
+        </aside>
+        <div id="content">
+            <main>
+                <table class="platform_data" platform="MIPS"></table>
+                <h1><img id="header_toggle" class="navigation_toggle" src="../images/hamburger.svg"/>MIPS</h1>
+                <p>
+                    MIPS (Microprocessor without Interlocked Pipelined Stages) es una familia de arquitecturas computacionales (ISAs) de categoría RISC
+                    desarrollada por la empresa estadounidense MIPS Computer Systems, hoy en día MIPS Technologies.                   
+                </p>
+                
+                <p>
+                    Existen múltiples versiones de MIPS, incluyendo MIPS I, II, III, IV y V, así como múltiples implementaciones de 32 y 64 bits (MIPS32/64, respectivamente). Las primeras ediciones eran
+                    exclusivamente de 32 bits, llegando las de 64 posteriormente. MIPS32/64 difiere de las ediciones I-V al incorporar el System Control Coprocessor como elemento hardware que
+                    actúa en modo kernel, en adición a la arquitectura de modo usuario.
+                </p>
+
+                <p>
+                    Por otra parte, la arquitectura MIPS cuenta con múltiples extensiones opcionales: MIPS-3D, que proporciona instrucciones SIMD de punto flotante destinadas
+                    a tareas 3D comunes, MDMX, similar a la anterior pero con operaciones de enteros, MIPS16e, que añade compresión al flujo de instrucciones para que los
+                    programas ocupen menos memoria, o MIPS MT, que añade capacidades de multithreading.
+                </p>
+
+                <p>
+                    Las materias relativas al hardware en los currículums de universidades y escuelas técnicas suelen incluir el estudio de la arquitectura MIPS, a causa de su
+                    simpleza e influencia en otras arquitecturas RISC como Alpha. En marzo de 2021, MIPS Technologies anunció el fin del desarrollo de la arquitectura,
+                    a causa del interés de la compaía en transicionar a RISC-V.
+                </p>
+
+                <h2>Instrucciones</h2>
+                <p>
+                    Al ser una arquitectura RISC, todas las instrucciones de MIPS cuentan con el mismo número de bits (32), y la mayoría de ellas son muy simples conceptualmente,
+                    a cambio de ejecutarse en menos ciclos de reloj, o el mismo número de estos pero siendo cada uno más breve. Por otra parte, gracias al elevado número de
+                    registros de propósito general y de punto flotante (generalmente 32 de ambos tipos), el hecho de no operar directamente en memoria no supone un problema
+                    tan notorio como representaría en arquitecturas CISC.
+                </p>
+                <p>
+                    Los tipos principales de instrucción, junto a un ejemplo de cada uno, son los siguientes:
+                </p>
+                <ui>
+                    <li>
+                        Tipo R, excluyendo saltos (fundamentalmente aritmético-lógicas) (ADD): Modifican únicamente el contenido de los registros a través del uso de la ALU.
+                        Esta clase de instrucciones cuenta con 3 registros: destino y dos operandos.
+                    </li>
+                    <li>
+                        Con inmediatos (ADDI): Son similares a las instrucciones aritmético-lógicas de tipo R pero en lugar de contar con dos operandos, uno de ellos es reemplazado
+                        por un inmediato codificado directamente en la instrucción.
+                    </li>
+                    <li>
+                        Saltos condicionales (BEQ): Siguen el formato de las instrucciones con inmediatos, comparando los dos registros y añadiendo un <i>offset</i> al registro
+                        contador de programa en caso de que la condición se verifique.
+                    </li>
+                    <li>
+                        Carga (LW): Siguen el formato de las instrucciones con inmediatos. Al registro destino se le añade un desplazamiento mediante el inmediato de la instrucción
+                        para obtener la posición de memoria de la que leer los datos.
+                    </li>
+                    <li>
+                        Almacenamiento (SW): Siguen el formato de las instrucciones con inmediatos. Al registro destino se le añade un desplazamiento mediante el inmediato
+                        de la instrucción para obtener la posición de memoria en que escribir los datos.
+                    </li>
+                    <li>
+                        Saltos absolutos (JAL): Los bits de la instrucción solo contienen el código de operación y la dirección de la palabra a la que desplazar el registro contador
+                        de programa. El valor previo de este se almacena en el registro de enlace, $31.
+                    </li>
+                    <li>
+                        Saltos absolutos con registros (JALR): Su formato es de tipo R al igual que en el caso de las instruciones aritmético-lógicas, pero a diferencia de estas,
+                        no utilizan la ALU. Permiten, en lugar de codificar directamente la dirección de salto en la instrucción, leerla de un registro concreto.
+                    </li>
+                </ui>
+                <h2>Referencia adicional</h2>
+                <p>
+                    Debido fundamentalmente a su interés pedagógico, así como a su empleo en hardware comercial como videoconsolas, la arquitectura MIPS se encuentra especialmente
+                    bien documentada, tanto en webs de terceros como por parte de la propia empresa encargada de su desarrollo. Es sencillo encontrar información detallada de cada
+                    una de las instrucciones, así como de otras particularidades de la arquitectura.
+                </p>
+                <p>
+                    Algunas herramientas de relevancia son
+                    <a href="https://s3-eu-west-1.amazonaws.com/downloads-mips/documents/MIPS_Architecture_MIPS64_InstructionSet_%20AFP_P_MD00087_06.05.pdf">el manual oficial de MIPS64</a> y
+                    <a href="https://spimsimulator.sourceforge.net/">SPIM, un simulador de MIPS32</a>
+                </p>
+            </main>
+            <footer>
+                <i>Hardware Planet 2023. <span id="disclaimer">La finalidad de esta página es exclusivamente informativa.</span></i>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+        <script src="../scripts/fetch_architecture_data.js"></script>
+        <script src="../scripts/content_menus.js"></script>
+        <script src="../scripts/navigation_bar.js"></script>
+        <script src="../scripts/night_mode.js"></script>
+        <script src="../scripts/preview_popups.js"></script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+
+@media screen and (max-width: 800px) {
+    .platform_data {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vh;
+        margin-bottom: 4vh;
+    }
+    
+    #content h1 {
+        margin-right: 0px;
+    }
+
+    #navigation_bar {
+        display: none;
+    }
+
+    #header_toggle {
+        display: inline;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .right_aligned_figure {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .left_aligned_figure {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+

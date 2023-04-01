@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HWPlanet</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../index.css"/>
+    </head>
+    <body>
+        <aside id="navigation_bar">
+            <figure>
+                <a href="../index.html"><img id="logo" src="../images/logo.png"/></a>
+            </figure>
+            <dl>
+                <dt class="content_menu">Plataformas</dt>
+                    <dd id="active_item">Commodore 64</dd>
+                    <dd><a href="msx.html">MSX</a></dd>
+                    <dd><a href="nes.html">NES</a></dd>
+                    <dd><a href="nintendo64.html">Nintendo 64</a></dd>
+                    <dd><a href="ps1.html">PlayStation 1</a></dd>
+                    <dd><a href="zxspectrum.html">ZX Spectrum</a></dd>
+                <dt class="content_menu">Arquitecturas</dt>
+                    <dd><a href="../architectures/6502.html">6502</a></dd>
+                    <dd><a href="../architectures/z80.html">Z80</a></dd>
+                    <dd><a href="../architectures/mips.html">MIPS</a></dd>
+                <dt class="content_menu">Software</dt>
+                    <dd><a href="../software/arcadeemus.html">Arcades</a></dd>
+                    <dd><a href="../software/multisystem.html">Multisistema</a></dd>
+                <dt><a href="../login.html">Login</a></dt>
+                <dt><a href="../contribute.html">Contribuir</a></dt>
+                <dt><a href="../about.html">Acerca de</a></dt>
+            </dl>
+            <input type="image" id="bar_toggle" class="navigation_toggle" src="../images/hamburger_white.svg"/>
+        </aside>
+        <div id="content">
+            <main>
+                <table class="platform_data" platform="Commodore 64"></table>
+                <h1><img id="header_toggle" class="navigation_toggle" src="../images/hamburger.svg"/>Commodore 64</h1>
+                <p>
+                    El Commodore 64, también llamado C64, es un ordenador doméstico de 8 bits lanzado al mercado en enero de 1982 por Commodore International. Considerado
+                    por la lista Guinness World Records como el modelo particular de ordenador más vendido de todos los tiempos, sus estimaciones de vendas, según fuentes independientes,
+                    oscilan entre los 12,5 y 17 millones, con especial éxito en Estados Unidos, y más reducido en otros países como Japón, donde tuvo que enfrentarse
+                    a un panorama comercial dominado por ordenadores autóctonos, o el Reino Unido.
+                </p>
+                <p>
+                    Parte de dicho éxito se debió a su venta en tiendas frecuentadas por el público general en lugar de aquellas que solo ofrecían componentes electrónicos
+                    o estaban pensadas para entusiastas de la computación. Commodore produjo muchas de sus partes autónomamente para reducir costes, incluyendo circuitos integrados
+                    (procesadores).
+                </p>
+                <p>
+                    A diferencia de sus predecesores, VIC-20 y PET, tomó su nombre de la cantidad de RAM que poseía, 64 KiB. Además, el sistema contaba con soporte para
+                    sprites multicolor y un chip personalizado para generación de ondas sonoras, lo que le permitía dar lugar a mejores gráficos y audio que la competencia.
+                </p>
+                <p>
+                    A nivel de software, se llegaron a lanzar alrededor de 10.000 títulos comerciales, incluyendo herramientas de desarrollo, aplicaciones de oficina y
+                    videojuegos.
+                </p>
+                <h2>Especificaciones</h2>
+                <ul>
+                    <li>
+                        CPU: MOS Technology 6510/8500 a 1,023 (NTSC) o 0,985 (PAL) MHz, una versión modificada del 6502 que emplea su misma ISA.
+                    </li>
+                    <li>
+                        Unidad de procesamiento gráfico: MOS Technology VIC-II 6567/8562 (NTSC) o 6569/8565 (PAL) con soporte para 16 colores, sprites y scrolling.
+                    </li>
+                    <li>
+                        Chip de sonido: MOS Technology 6581/8580 SID, con sintetizador de 3 canales.
+                    </li>
+                    <li>
+                        Entrada/Salida: Doble 6526 Complex Interface Adapters, ofreciendo puerto serie, paralelo, reloj y timers.
+                    </li>
+                    <li>
+                        RAM: 64 KiB, con 38 de ellos disponibles para programas escritos en BASIC.
+                    </li>
+                    <li>
+                        Medios: Múltiples, destacando especialmente los cartuchos y los cassettes.
+                    </li>
+                </ul>
+                <h2>Emulación</h2>
+                <p>
+                    La escena de emuladores del Commodore 64 se encuentra muy desarrollada, a causa del gran interés por parte de quienes poseyeron uno hace décadas. Existen
+                    múltiples programas que ofrecen elevada precisión en lo relativo a la emulación no solo de este sistema, sino también de otros fabricados por Commodore.
+                </p>
+                
+                <div class="table_wrapper">
+                    <table class="emulator_table">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Plataformas</th>
+                        <th>Lenguaje de programación</th>
+                        <th>Precisión</th>
+                        <th>Código abierto</th>
+                        <th>En desarrollo</th>
+                        <th>Recomendado</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://sourceforge.net/projects/deniseemu/">Denise</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/></td>
+                        <td>C++</td>
+                        <td>Muy alta</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://vice-emu.sourceforge.io/">VICE</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/> <img src="../images/freebsd.png" alt="FreeBSD"/></td>
+                        <td>C</td>
+                        <td>Muy alta</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/abbruzze/kernal64">Kernal64</a></td>
+                        <td><img src="../images/java.png" alt="Java"/></td>
+                        <td>Scala</td>
+                        <td>Alta</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/TASEmulators/BizHawk">BizHawk</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/></td>
+                        <td>C#</td>
+                        <td>Media</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="negative_table_row">✗</td>
+                    </tr>
+                    
+                    </table>
+                </div>
+            </main>
+            <footer>
+                <i>Hardware Planet 2023. <span id="disclaimer">La finalidad de esta página es exclusivamente informativa.</span></i>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+        <script src="../scripts/fetch_platform_data.js"></script>
+        <script src="../scripts/content_menus.js"></script>
+        <script src="../scripts/navigation_bar.js"></script>
+        <script src="../scripts/night_mode.js"></script>
+        <script src="../scripts/preview_popups.js"></script>
+    </body>
+</html>

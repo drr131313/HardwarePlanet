@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HWPlanet</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../index.css"/>
+    </head>
+    <body>
+        <aside id="navigation_bar">
+            <figure>
+                <a href="../index.html"><img id="logo" src="../images/logo.png"/></a>
+            </figure>
+            <dl>
+                <dt class="content_menu">Plataformas</dt>
+                    <dd><a href="commodore64.html">Commodore 64</a></dd>
+                    <dd><a href="msx.html">MSX</a></dd>
+                    <dd><a href="nes.html">NES</a></dd>
+                    <dd id="active_item">Nintendo 64</dd>
+                    <dd><a href="ps1.html">PlayStation 1</a></dd>
+                    <dd><a href="zxspectrum.html">ZX Spectrum</a></dd>
+                <dt class="content_menu">Arquitecturas</dt>
+                    <dd><a href="../architectures/6502.html">6502</a></dd>
+                    <dd><a href="../architectures/z80.html">Z80</a></dd>
+                    <dd><a href="../architectures/mips.html">MIPS</a></dd>
+                <dt class="content_menu">Software</dt>
+                    <dd><a href="../software/arcadeemus.html">Arcades</a></dd>
+                    <dd><a href="../software/multisystem.html">Multisistema</a></dd>
+                <dt><a href="../login.html">Login</a></dt>
+                <dt><a href="../contribute.html">Contribuir</a></dt>
+                <dt><a href="../about.html">Acerca de</a></dt>
+            </dl>
+            <input type="image" id="bar_toggle" class="navigation_toggle" src="../images/hamburger_white.svg"/>
+        </aside>
+        <div id="content">
+            <main>
+                <table class="platform_data" platform="Nintendo 64"></table>
+                <h1><img id="header_toggle" class="navigation_toggle" src="../images/hamburger.svg"/>Nintendo 64</h1>
+                <p>
+                    La Nintendo 64 es una consola doméstica desarrollada por Nintendo como sucesora a la Super Nintendo Entertainment System, que fue lanzada en 1996, tanto
+                    en Japón como en Estados Unidos, y en Europa en el año posterior. Se trató de la última plataforma de sobremesa de la compañía en emplear cartuchos en lugar de discos
+                    ópticos. Sus competidores principales fueron la PlayStation de Sony y la Sega Saturn.
+                </p>
+                <p>
+                    El proceso de desarrollo comenzó en 1993 en colaboración con Silicon Graphics, empleando el nombre en clave <i>Project Reality</i> y dando como resultado un modelo de prueba
+                    denominado Ultra 64. Posteriormente, el nombre definitivo sería elegido en relación a su procesador de 64 bits, que ayudaba a las capacidades tridimensionales de la consola.
+                    Aunque el producto final se encontraba prácticamente disponible a mediados de 1995, el lanzamiento se retrasó hasta el año siguiente para completar los juegos de lanzamiento,
+                    entre los que destacaban Super Mario 64 y Pilotwings 64.
+                </p>
+                <p>
+                    La plataforma dio soporte a múltiples accesorios y periféricos, como el Expansion Pak, que incrementaba la RAM del sistema hasta los 8 MiB, el Controller Pak,
+                    que almacenaba las partidas guardadas en algunos títulos, o el 64DD, que permitía el uso de discos magnéticos de hasta 64 MiB, aunque este último solo fue lanzado en
+                    Japón y no tuvo éxito comercial.                    
+                </p>
+                <p>
+                    En cuanto a su reconocimiento en la industria, la revista Time la nombró Máquina del Año en 1996 y, en 2011, IGN la incluyó en su ranking de las 10 mejores consolas de todos los tiempos.
+                    Incluso tras su sucesión por la GameCube, lanzada en 2001, se mantuvo como una de las plataformas más apreciadas del sector.
+                </p>
+                <h2>Especificaciones</h2>
+                <ul>
+                    <li>
+                        CPU: NEC VR4300 de 64 bits, a 93,75 MHz, con rendimiento de 125 millones de instrucciones por segundo y bus de sistema de 32 bits.
+                    </li>
+                    <li>
+                        RAM: 4 MiB de memoria unificada, común a CPU, audio y vídeo, expandible a 8 MiB con el periférico Expansion Pak.
+                    </li>
+                    <li>
+                        Unidad de procesamiento gráfico y de audio: Coprocesador <i>Reality</i> a 62,5 MHz, con soporte para 16 millones de colores, resolución
+                        de hasta 640x480 píxeles, y audio con muestreo de 48 KHz.
+                    </li>
+                    <li>
+                        Medios: Cartuchos.
+                    </li>
+                </ul>
+                <h2>Emulación</h2>
+                <p>
+                    Aunque existen muchos emuladores para el sistema, la mayoría presentan el mismo problema: su rendimiento depende
+                    en gran medida de la configuración elegida. Sin embargo, varios de ellos pueden llegar a ofrecer una elevada precisión.
+                </p>
+                <div class="table_wrapper">
+                    <table class="emulator_table">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Plataformas</th>
+                        <th>Lenguaje de programación</th>
+                        <th>Precisión</th>
+                        <th>Código abierto</th>
+                        <th>En desarrollo</th>
+                        <th>Recomendado</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/Rosalie241/RMG">RMG</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/></td>
+                        <td>C++</td>
+                        <td>Dependiente de los plugins</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/ares-emulator/ares">ares</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/></td>
+                        <td>C++</td>
+                        <td>Alta</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/mupen64plus">Mupen64Plus</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/> <img src="../images/linux.png" alt="Linux"/> <img src="../images/macos.png" alt="MacOS"/> <img src="../images/freebsd.png" alt="FreeBSD"/></td>
+                        <td>C</td>
+                        <td>Dependiente de los plugins</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="negative_table_row">✗</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://sourceforge.net/projects/schibo/">1964</a></td>
+                        <td><img src="../images/windows.png" alt="Windows"/></td>
+                        <td>C, C++</td>
+                        <td>Baja</td>
+                        <td class="affirmative_table_row">✓</td>
+                        <td class="negative_table_row">✗</td>
+                        <td class="negative_table_row">✗</td>
+                    </tr>
+                    </table>
+                </div>
+            </main>
+            <footer>
+                <i>Hardware Planet 2023. <span id="disclaimer">La finalidad de esta página es exclusivamente informativa.</span></i>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+        <script src="../scripts/content_menus.js"></script>
+        <script src="../scripts/cookie_notification.js"></script>
+        <script src="../scripts/fetch_platform_data.js"></script>
+        <script src="../scripts/navigation_bar.js"></script>
+        <script src="../scripts/night_mode.js"></script>
+        <script src="../scripts/preview_popups.js"></script>
+    </body>
+</html>
