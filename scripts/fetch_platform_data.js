@@ -2,7 +2,7 @@
 const table = document.getElementsByClassName("platform_data")[0];
 
 let request = new XMLHttpRequest();
-request.open('GET', 'https://127.0.0.1/platforms.xml', true);
+request.open('GET', '../platforms.xml', true);
 request.onload = function() {
     if(this.status == 200) {
         let data = this.responseXML.getElementsByTagName('platform');

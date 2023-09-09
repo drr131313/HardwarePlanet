@@ -2,7 +2,7 @@ const table = document.getElementsByClassName("platform_data")[0];
 
 console.log(table);
 
-fetch('https://127.0.0.1/architectures.json').then(response => response.json()).then(data => {
+fetch('../architectures.json').then(response => response.json()).then(data => {
 
     let item = null;
     let name = null;
