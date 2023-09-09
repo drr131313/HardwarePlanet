@@ -4,15 +4,8 @@ console.log(table);
 
 fetch('../architectures.json').then(response => response.json()).then(data => {
 
-    let item = null;
-    let name = null;
-    for(elem of Object.keys(data.Architectures)) {
-        if(elem == table.getAttribute('platform')) {
-            item = data.Architectures[elem];
-            name = elem;
-            break;
-        }
-    }
+    let name = table.getAttribute['platform'];
+    let item = data.Architectures[name];
 
     if(item != null) {
         table.innerHTML += '<tr><td colspan="2"><img id="platform_image" src="' + item["Image path"] + '" alt="Imagen PS1"/></td></tr>';
