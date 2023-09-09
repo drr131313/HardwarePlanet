@@ -1,10 +1,8 @@
 const table = document.getElementsByClassName("platform_data")[0];
 
-console.log(table);
-
 fetch('../architectures.json').then(response => response.json()).then(data => {
 
-    let name = table.getAttribute['platform'];
+    let name = table.getAttribute('platform');
     let item = data.Architectures[name];
 
     if(item != null) {
